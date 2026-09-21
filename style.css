@@ -71,7 +71,7 @@ button:active {
 /* Operators */
 .divide,
 .X,
-.four,
+.minus,
 .plus {
     background: #f59e0b;
 }
@@ -98,18 +98,15 @@ button:active {
 }
 
 /* Responsive */
-@media (max-width: 450px) {
-    .container {
-        width: 90%;
-        padding: 18px;
-    }
-
-    button {
-        width: 100%;
-        height: 60px;
-    }
-
-    .buttons > div {
-        gap: 8px;
-    }
-}
+@media (max-width: 450px) { 
+    .container { 
+        width: 92%; padding: 18px; 
+    } .buttons > div {
+         display: flex; gap: 8px; margin-bottom: 10px; 
+        }
+         
+         .buttons button
+          { flex: 1; width: auto; min-width: 0; height: 58px; font-size: 20px;
+         } .textArea {
+             height: 65px; font-size: 27px; 
+        } }
